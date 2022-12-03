@@ -1,0 +1,5 @@
+     [Jingyy]
+     name-Jingyy
+     baseurl = file:///mnt
+     enabled-l
+     gpgcheck-0
