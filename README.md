@@ -1,5 +1,7 @@
 # CloudComputing20060621-622
-
+#### 注意由于github文件上传大小限制原因，所以incest.pt权重文件未上传，需要的同学可以通过以下链接下载并存放与weight文件夹下
+链接：https://pan.baidu.com/s/1bJ6inlio2dPRN6QCgoeOKQ 
+提取码：djh6
 #### 介绍
 云计算技术课程项目作业-农业害虫检测系统
 
