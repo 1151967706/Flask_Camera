@@ -1,0 +1,44 @@
+#dw_footer {
+    width: 100%;
+    height: 200px;
+    background: url("../imgs/ft_bg.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+}
+#dw_footer ul {
+    list-style: none;
+}
+#dw_footer .one, #dw_footer .two {
+    padding: 10px;
+    border-right: 1px solid #666;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dw_footer .one li {
+    line-height: 40px;
+}
+#dw_footer .three {
+    padding: 10px 50px;
+    height: 180px;
+    
+    /* css3伸缩布局实现元素水平垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#dw_footer .three a {
+    text-decoration: none;
+}
+#dw_footer .three a img {
+    margin-right: 10px;
+}
+#dw_footer .one li a {
+    color: #fff;
+}
