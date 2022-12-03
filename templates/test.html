@@ -1,0 +1,35 @@
+{%extends base.html%}
+{%block title%}用户登录{% endblock %}
+
+{%block link %} <link href="{{url_for('static',filename='css/signin.css')}}" rel="stylesheet">{% endblock %}
+
+{%block body %}
+<body class="text-center  bg-dark" background="2.png" >
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="{{url_for('static',filename='img/33.png')}}" alt="" width="80" height="80">
+    <h1 class="h3 mb-3 fw-normal text-white">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> rememberme
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020–2022</p>
+  </form>
+  <footer class="container">
+    <p class="float-md-none"><a href="home.html">回到主页</a></p>
+  </footer>
+</main>
+<body>
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+ {% block title %}首页{% endblock %}
+
+{% block body %}
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static',filename='img/1.jpg') }}"/>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>你了解病虫害吗？</h1>
+            <p>快来尝试一下我们的识别系统，它能够帮助你发现那些问题。</p>
+            <p><a class="btn btn-lg btn-primary" href="{{ url_for('detect_mi') }}">立即开始</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static',filename='img/2.png') }}"/>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>春种一粒粟，秋收万颗子。</h1>
+            <p>A good harvest depends on the spring sowing.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">加入论坛</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static',filename='img/3.png') }}"/>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>我们会做的更好</h1>
+            <p>慷慨临歧重相勉，殷勤别后加餐饭</p>
+            <p><a class="btn btn-lg btn-primary" href="#">支持我们</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img  src="static\img\7.PNG"/>
+        <h2>精准预警</h2>
+        <p>针对农作物病虫害发病率高，病虫害防治过量用药，农作物生长中的果实病害，叶片灾害，枝干灾害等进行精准预警。</p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="static\img\8.PNG"/>
+        <h2>治疗指导</h2>
+        <p>结合专家文档，专业知识，对病虫害防治进行专业指导与教学，提供海量资源。<br><br></p>
+        <!-- <p><a class="btn btn-secondary" href="http://www.icgroupcas.cn/website_bchtk/chazhao.aspx">查看资料 &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="static\img\9.PNG"/>
+        <h2>全局分析</h2>
+        <p>针对指定周期给与周期内数据统计，对下周期进行更精准的防止建议。<br><br></p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-6">
+        <h2 class="featurette-heading">水稻 <span class="text-muted"></span></h2>
+        <p >
+          水稻病害种类很多，全世界发生的水稻病害有100余种，我国正式记载的超过70种，有重要经济影响的约20种。其中稻瘟病、纹枯病和白叶枯病发生地域广，流行频率高，危害程度重，是水稻三大病害，防治难度较大。稻瘟病菌易发生变异，品种抗性不能持久；白叶枯病没有良好的防治药剂；纹枯病缺乏高抗性品种。这些病害仍是主要的监控研究对象。</p>
+      </div>
+      <div class="col-md-4 ml-5">
+        <img src="static\img\4.PNG" height="300px" width="300px" alt="">
+
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">小麦<span class="text-muted"></span></h2>
+        <p class="lead">
+          小麦是小麦系植物的统称，是一种在世界各地广泛种植的禾本科植物。小麦常见病害有小麦锈病、白粉病、全蚀病、根腐病、黄矮病、霜霉病、秆枯病等。小麦常见虫害有：小麦蚜虫、金针虫、蛴螬、蝼蛄、小麦粘虫等。</p>
+      </div>
+      <div class="col-md-5 order-md-1  ">
+        <img src="static\img\5.PNG" height="300px" width="300px">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">玉米<span class="text-muted"></span></h2>
+        <p class="lead">
+          玉米是我国的主要粮食作物，种植面积和总产量仅次于小麦和水稻而居第三位。玉米除食用外，还是发展畜牧业的优良饲料和轻工、医药工业的重要原料。病害是影响玉米生产的主要灾害，常年损失6％～10％。全世界玉米病害80多种，我国30多种。目前发生普遍而又严重的病害有大斑病、小斑病、锈病、纹枯病、弯孢霉叶斑病、茎基腐病、丝黑穗病等。</p>
+      </div>
+      <div class="col-md-5 ">
+        <img src="static\img\6.PNG" height="300px" width="300px">
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+
+<script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }}"></script>
+
+{% endblock %}
